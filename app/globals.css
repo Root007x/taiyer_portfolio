@@ -188,7 +188,7 @@ body {
   border-radius: 50%;
   pointer-events: none;
   z-index: 10000;
-  transition: transform 0.15s var(--ease-cinematic), width 0.3s, height 0.3s, border-color 0.3s;
+  transition: width 0.3s, height 0.3s, border-color 0.3s;
   mix-blend-mode: difference;
 }
 .cursor-circle.hovering {
@@ -293,6 +293,11 @@ body {
   outline: none;
   transition: var(--transition-base);
 }
+.form-input option {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
 .form-input::placeholder { color: var(--text-muted); }
 .form-input:focus {
   border-color: var(--border-accent);

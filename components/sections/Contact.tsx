@@ -43,7 +43,7 @@ export function Contact() {
             {/* Contact details */}
             <div className="flex flex-col" style={{ gap: "var(--space-5)" }}>
               {[
-                { label: "Email", value: "hello@taiyer.com", href: "mailto:hello@taiyer.com" },
+                { label: "Email", value: "taiyarkhan98@gmail.com", href: "mailto:taiyarkhan98@gmail.com" },
                 { label: "Location", value: "Available Worldwide", href: null },
                 { label: "Response", value: "Within 24 hours", href: null },
               ].map((item) => (
@@ -111,8 +111,8 @@ export function Contact() {
                 </button>
               </motion.div>
             ) : (
-              <form onSubmit={onSubmit} className="glass flex flex-col" style={{ padding: "var(--space-10)", gap: "var(--space-6)" }}>
-                <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: "var(--space-6)" }}>
+              <form onSubmit={onSubmit} className="glass flex flex-col" style={{ padding: "var(--space-6) var(--space-8)", gap: "var(--space-4)" }}>
+                <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: "var(--space-4)" }}>
                   <div>
                     <label className="block text-xs tracking-widest uppercase" style={{ color: "var(--text-muted)", marginBottom: "var(--space-2)" }}>
                       Name *

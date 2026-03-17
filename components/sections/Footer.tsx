@@ -110,11 +110,11 @@ export function Footer() {
             </div>
             <div className="flex flex-col gap-6">
               <a 
-                href="mailto:hello@taiyer.com" 
+                href="mailto:taiyarkhan98@gmail.com" 
                 className="group flex flex-col gap-2"
               >
                 <span className="text-[9px] tracking-[0.4em] uppercase text-muted/40 group-hover:text-gold transition-colors font-semibold">Message</span>
-                <span className="text-[11px] text-secondary/80 group-hover:text-primary transition-colors tracking-widest font-light">hello@taiyer.com</span>
+                <span className="text-[11px] text-secondary/80 group-hover:text-primary transition-colors tracking-widest font-light">taiyarkhan98@gmail.com</span>
               </a>
               <div className="flex flex-col gap-2">
                 <span className="text-[9px] tracking-[0.4em] uppercase text-muted/40 font-semibold">Based In</span>
