@@ -26,7 +26,7 @@ export function Stats() {
       />
 
       <div className="container-xl relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 text-center" style={{ gap: "var(--space-6)" }}>
+        <div className="grid grid-cols-1 md:grid-cols-3 text-center justify-items-center" style={{ gap: "var(--space-6)" }}>
           {stats.map((stat, i) => (
             <SectionReveal key={stat.id} delay={i * 0.1} direction="up">
               <div className="group" style={{ padding: "var(--space-6)" }}>

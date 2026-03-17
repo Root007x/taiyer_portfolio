@@ -17,10 +17,10 @@ export function useIntersectionObserver<T extends Element>(
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry && entry.isIntersecting) {
           setIsVisible(true);
           if (once) observer.unobserve(el);
-        } else if (!once) {
+        } else if (!once && entry) {
           setIsVisible(false);
         }
       },

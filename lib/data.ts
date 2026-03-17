@@ -28,15 +28,6 @@ export interface ProcessStep {
   icon: string;
 }
 
-export interface Testimonial {
-  id: string;
-  name: string;
-  role: string;
-  company: string;
-  avatar: string;
-  quote: string;
-  rating: number;
-}
 
 export interface Stat {
   id: string;
@@ -58,7 +49,6 @@ export const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Work", href: "#portfolio" },
   { label: "Process", href: "#process" },
-  { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -254,76 +244,26 @@ export const processSteps: ProcessStep[] = [
   },
 ];
 
-export const testimonials: Testimonial[] = [
-  {
-    id: "t1",
-    name: "Sarah Chen",
-    role: "Creative Director",
-    company: "Luminary Studios",
-    avatar: "",
-    quote:
-      "Working with Taiyer Khan was transformative. Every project exceeded our wildest expectations — the attention to detail and cinematic mastery is unparalleled in the industry.",
-    rating: 5,
-  },
-  {
-    id: "t2",
-    name: "Marcus Rivera",
-    role: "Founder",
-    company: "Horizon Tech",
-    avatar: "",
-    quote:
-      "Our brand film generated 3x more leads than any previous campaign. The storytelling ability and motion work are on another level entirely — world-class talent.",
-    rating: 5,
-  },
-  {
-    id: "t3",
-    name: "Aisha Patel",
-    role: "Head of Content",
-    company: "Pulse Fitness",
-    avatar: "",
-    quote:
-      "50 million organic views and counting. The campaign Taiyer Khan crafted became our most successful marketing asset ever. An absolute pleasure to work with.",
-    rating: 5,
-  },
-  {
-    id: "t4",
-    name: "James Whitmore",
-    role: "Executive Producer",
-    company: "NatGeo Digital",
-    avatar: "",
-    quote:
-      "The color grading on our documentary series elevated the entire visual quality to broadcast standard. Exceptional professionalism and artistry from start to finish.",
-    rating: 5,
-  },
-];
-
 export const stats: Stat[] = [
   {
     id: "st1",
-    value: 150,
+    value: 50,
     suffix: "+",
     label: "Projects Delivered",
     description: "Across 6 continents",
   },
   {
     id: "st2",
-    value: 8,
+    value: 3,
     suffix: "+",
     label: "Years Experience",
     description: "In cinematic production",
   },
   {
     id: "st3",
-    value: 50,
+    value: 10,
     suffix: "M+",
     label: "Total Views",
     description: "Across all client content",
-  },
-  {
-    id: "st4",
-    value: 24,
-    suffix: "",
-    label: "Awards Won",
-    description: "International recognition",
   },
 ];

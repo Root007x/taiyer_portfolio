@@ -7,7 +7,7 @@ interface Props {
   className?: string;
   hover?: boolean;
   glow?: boolean;
-  style?: React.CSSProperties;
+  style?: React.CSSProperties | undefined;
 }
 
 export function GlassCard({ children, className = "", hover = true, glow = false, style }: Props) {

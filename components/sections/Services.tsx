@@ -19,10 +19,21 @@ export function Services() {
           <h2 className="font-display" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", marginBottom: "var(--space-4)" }}>
             Services That <span className="text-gradient">Elevate</span>
           </h2>
-          <p className="max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
-            A comprehensive suite of post-production services, each delivered
-            with relentless attention to detail and creative precision.
-          </p>
+          <div className="flex justify-center">
+            <p 
+              className="text-center leading-[1.7] tracking-wide px-4"
+              style={{ 
+                color: "var(--text-secondary)", 
+                textAlign: "center",
+                lineHeight: "1.7",
+                maxWidth: "36rem",
+                width: "100%"
+              }}
+            >
+              A comprehensive suite of post-production services, each delivered
+              with relentless attention to detail and creative precision.
+            </p>
+          </div>
         </SectionReveal>
 
         {/* Grid */}
