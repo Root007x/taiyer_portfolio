@@ -4,8 +4,7 @@ import {
   Instagram, 
   Linkedin, 
   Palette, 
-  Video, 
-  ArrowUp
+  Video
 } from "lucide-react";
 import { navLinks } from "@/lib/data";
 
