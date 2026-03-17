@@ -202,7 +202,6 @@ export function Contact() {
                     <option>Cinematic Editing</option>
                     <option>Motion Graphics</option>
                     <option>Color Grading</option>
-                    <option>VFX & Compositing</option>
                     <option>Social Media Content</option>
                     <option>Corporate Video</option>
                     <option>Other</option>
