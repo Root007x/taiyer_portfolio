@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body
-        className="film-grain"
+        className=""
         style={{
           fontFamily: "var(--font-inter, system-ui, sans-serif)",
         }}
