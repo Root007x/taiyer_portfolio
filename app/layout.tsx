@@ -15,11 +15,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Taiyer Khan — Video Editor & Motion Designer",
+  title: "Taiyar Khan — Video Editor & Motion Designer",
   description: "Professional Video Editor and Motion Graphics Designer specializing in dynamic, cinematic storytelling.",
   keywords: ["video editor", "motion designer", "color grading", "VFX", "after effects", "premiere pro"],
   openGraph: {
-    title: "Taiyer Khan — Video Editor & Motion Designer",
+    title: "Taiyar Khan — Video Editor & Motion Designer",
     description: "Professional Video Editor and Motion Graphics Designer specializing in dynamic, cinematic storytelling.",
     type: "website",
   },

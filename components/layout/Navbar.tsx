@@ -56,7 +56,7 @@ export function Navbar() {
               T
             </span>
               <span className="font-display tracking-[0.2em] text-sm uppercase">
-                Taiyer Khan
+                Taiyar Khan
               </span>
           </a>
 

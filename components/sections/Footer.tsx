@@ -51,7 +51,7 @@ export function Footer() {
                 <span className="font-display text-5xl text-gradient leading-none select-none">T</span>
                 <div className="flex flex-col gap-1">
                   <h3 className="font-display tracking-[0.3em] text-[10px] uppercase text-primary">
-                    Taiyer Khan
+                    Taiyar Khan
                   </h3>
                   <span className="text-[8px] tracking-[0.5em] uppercase text-gold font-medium">
                     Motion Artist
@@ -148,7 +148,7 @@ export function Footer() {
         {/* Footer Bottom Bar - Refined Spacing */}
         <div className="pt-10 lg:pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8 opacity-50">
            <div className="flex items-center gap-6 text-[9px] tracking-[0.3em] uppercase">
-              <span>© {year} Taiyer Khan</span>
+              <span>© {year} Taiyar Khan</span>
               <span className="w-1 h-1 rounded-full bg-gold/20" />
               <span className="text-gold/60">Cinematic Production</span>
            </div>

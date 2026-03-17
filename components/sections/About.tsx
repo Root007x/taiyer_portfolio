@@ -31,7 +31,7 @@ export function About() {
                     T
                   </span>
                   <p className="text-xs tracking-[0.4em] uppercase" style={{ color: "var(--text-secondary)" }}>
-                    Taiyer Khan
+                    Taiyar Khan
                   </p>
                 </div>
                 {/* Film frame notches */}
@@ -78,7 +78,7 @@ export function About() {
 
               <div className="text-sm md:text-base flex flex-col" style={{ color: "var(--text-secondary)", lineHeight: 1.7, gap: "var(--space-3)", marginBottom: "var(--space-6)" }}>
                 <p>
-                  I am Taiyer Khan, a professional Video Editor and Motion Graphics Designer with over 3 years of 
+                  I am Taiyar Khan, a professional Video Editor and Motion Graphics Designer with over 3 years of 
                   experience in creating engaging and high-quality content for digital platforms. I have worked with multiple 
                   clients and YouTube channels, helping them transform their ideas into visually compelling videos that capture 
                   audience attention and increase engagement.

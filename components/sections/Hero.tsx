@@ -154,7 +154,7 @@ export function Hero() {
             >
               <Image
                 src="/images/hero-profile.jpg"
-                alt="Taiyer Khan"
+                alt="Taiyar Khan"
                 fill
                 priority
                 className="object-cover object-center"
