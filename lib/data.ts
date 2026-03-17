@@ -56,11 +56,9 @@ export const skills: Skill[] = [
   { label: "Premiere Pro", level: 98 },
   { label: "After Effects", level: 95 },
   { label: "DaVinci Resolve", level: 90 },
-  { label: "Cinema 4D", level: 85 },
   { label: "Motion Design", level: 92 },
   { label: "Color Grading", level: 96 },
   { label: "Sound Design", level: 80 },
-  { label: "VFX Compositing", level: 88 },
   { label: "3D Animation", level: 82 },
   { label: "Storytelling", level: 97 },
 ];
