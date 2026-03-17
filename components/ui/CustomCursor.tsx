@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export function CustomCursor() {
   const dotRef    = useRef<HTMLDivElement>(null);
