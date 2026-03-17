@@ -15,9 +15,32 @@ export function Contact() {
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    // Simulated send
-    await new Promise((r) => setTimeout(r, 1500));
-    setStatus("success");
+
+    const formData = new FormData(e.target as HTMLFormElement);
+    
+    // Add access key (User should replace this or use env variable)
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY_HERE";
+    formData.append("access_key", accessKey);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("success");
+        setForm({ name: "", email: "", project: "", message: "" });
+      } else {
+        console.error("Error", data);
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error("Submit Error", error);
+      setStatus("error");
+    }
   };
 
   return (
@@ -110,8 +133,30 @@ export function Contact() {
                   Send Another
                 </button>
               </motion.div>
+            ) : status === "error" ? (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="glass h-full flex flex-col items-center justify-center text-center"
+                style={{ padding: "var(--space-12)", gap: "var(--space-6)" }}
+              >
+                <div className="text-5xl">❌</div>
+                <h3 className="font-display text-2xl" style={{ color: "var(--accent-red)" }}>Something went wrong</h3>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  There was an error sending your message. Please try again.
+                </p>
+                <button
+                  onClick={() => setStatus("idle")}
+                  className="btn-gold"
+                >
+                  Try Again
+                </button>
+              </motion.div>
             ) : (
               <form onSubmit={onSubmit} className="glass flex flex-col" style={{ padding: "var(--space-6) var(--space-8)", gap: "var(--space-4)" }}>
+                {/* Web3Forms Hidden Fields */}
+                <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
+                
                 <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: "var(--space-4)" }}>
                   <div>
                     <label className="block text-xs tracking-widest uppercase" style={{ color: "var(--text-muted)", marginBottom: "var(--space-2)" }}>
