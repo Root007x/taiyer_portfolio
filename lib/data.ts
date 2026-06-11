@@ -171,7 +171,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: "p6",
     title: "",
-    category: "Documentary",
+    category: "",
     categories: ["documented-video", "color"],
     client: "NatGeo Digital",
     year: "",
