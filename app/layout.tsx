@@ -33,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         style={{
           fontFamily: "var(--font-inter, system-ui, sans-serif)",
         }}
+        suppressHydrationWarning={true}
       >
         {children}
       </body>
