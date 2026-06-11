@@ -132,7 +132,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: "p2",
     title: "",
-    category: "Motion",
+    category: "",
     categories: ["motion", "corporate"],
     client: "Horizon Tech",
     year: "",
@@ -145,7 +145,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: "p3",
     title: "",
-    category: "Music Video",
+    category: "",
     categories: ["documented-video", "vfx"],
     client: "Lyra Records",
     year: "",
@@ -158,7 +158,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: "p5",
     title: "",
-    category: "Social",
+    category: "",
     categories: ["social", "motion", "documented-video"],
     client: "Pulse Fitness",
     year: "",
